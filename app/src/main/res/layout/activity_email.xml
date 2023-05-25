@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EmailActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/user_is_null"
+        android:padding="24dp"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_margin="8dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:id="@+id/text_view"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="E-mail"
+            android:textColor="@color/black"
+            android:layout_margin="8dp"
+            android:id="@+id/email_et"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Password"
+            android:textColor="@color/black"
+            android:password="true"
+            android:layout_margin="8dp"
+            android:id="@+id/password_et"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_margin="8dp"
+            android:layout_gravity="center"
+            android:id="@+id/sign_up_btn"
+            android:text="Sign up"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_margin="8dp"
+            android:layout_gravity="center"
+            android:id="@+id/sign_in_btn"
+            android:text="Sign in"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_margin="8dp"
+            android:layout_gravity="center"
+            android:id="@+id/reset_password_btn"
+            android:text="Reset password"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/user_is_not_null"
+        android:padding="24dp"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_margin="8dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:id="@+id/text_view_2"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="New password"
+            android:textColor="@color/black"
+            android:password="true"
+            android:layout_margin="8dp"
+            android:id="@+id/new_password_et"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_margin="8dp"
+            android:layout_gravity="center"
+            android:id="@+id/change_password_btn"
+            android:text="Change password"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_margin="8dp"
+            android:layout_gravity="center"
+            android:id="@+id/sign_out_btn"
+            android:text="Sign out"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_margin="8dp"
+            android:layout_gravity="center"
+            android:id="@+id/delete_account_btn"
+            android:text="Delete account"/>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
